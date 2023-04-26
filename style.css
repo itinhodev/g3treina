@@ -1,27 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Bebas Neue', cursive;
 }
 
-.box-degrade{
-    width: 100%;
-    padding: 300px 0;
+body{
+    background-color: rgb(3, 3, 31);
+}
+
+section, footer{
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: #0000009c;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: #030722;
+    color: #88ff55;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn:hover{
+    background-color: #0a1255;
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to left, #99E89D, #73C883, #4DA768, #26874E, #006633);
-    background-size: 500% 100%;
-    animation: degrade-animado 4s infinite alternate;
+    justify-content: space-between;
+    padding-top: 30px;
 }
 
-@keyframes degrade-animado {
-    0%{
-        background-position-x: 0%;
+nav ul{
+    display: flex;
+    align-items: center;
+}
 
-    }
-    100%{
-        background-position-x: 100%;
-    } 
+nav ul a{
+    color: #88ff55;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
 }
