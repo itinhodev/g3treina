@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: rgb(3, 3, 31);
+    background-color: black;
 }
 
 section, footer{
@@ -51,9 +51,9 @@ p{
 }
 
 .banner .banner-text{
-    margin: 150px;
+    margin: 54px;
     text-align: center;
-    padding: 0 90px;
+    padding: 0px 90px;
 }
 
 .banner .banner-text h1{
