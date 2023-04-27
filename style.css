@@ -14,6 +14,7 @@ body{
 
 section, footer{
     padding: 54px 0;
+    color: white;
 }
 
 h3{
@@ -21,7 +22,7 @@ h3{
 }
 
 p{
-    color: #0000009c;
+    color: #ffffff;
 }
 
 .container{
@@ -31,8 +32,8 @@ p{
 }
 
 .btn{
-    background-color: #030722;
-    color: #88ff55;
+    background-color: #4cbb17;
+    color: white;
     padding: 15px 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -41,7 +42,30 @@ p{
 }
 
 .btn:hover{
-    background-color: #0a1255;
+    background-color: #a1dc85;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
 }
 
 header{
@@ -63,9 +87,25 @@ nav ul{
 }
 
 nav ul a{
-    color: #030722;
+    color: #88ff55;
     margin: 0 25px;
     text-transform: uppercase;
     font-size: 14px;
     display: block;
+}
+
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: #4cbb17;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+
+    
 }
