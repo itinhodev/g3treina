@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -59,13 +61,15 @@ p{
 .banner .banner-text h1{
     font-size: 96px;
     color: white;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
-.banner .banner-text p{
-    font-size: 20px;
-    color: #ffffffb7;
+.banner .banner-text h3{
+    font-size: 40px;
+    color: #ffffff;
     font-weight: lighter;
-    margin: 18px 0;
+    margin: 5px 0;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 header{
