@@ -1,22 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
 body{
     background-color: black;
-
 }
 
-a{
-    color: red;
-    outline: none;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    font-weight: lighter;
-    font-style: italic;
-}
-
-h1{
+section, footer{
+    padding: 54px 0;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: #ffffff;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: #006934;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn:hover{
+    background-color: #33830f;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text{
+    margin: 54px;
+    text-align: center;
+    padding: 0px 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.banner .banner-text p{
+    font-size: 30px;
+    color: #ffffff;
     font-weight: lighter;
-    font-size: 90px;
+    margin: 70px 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: #006934;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: #44db90;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+
+    
 }
