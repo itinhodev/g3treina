@@ -18,6 +18,24 @@ body{
     background-color: black;
 }
 
+section .list{
+    width: 60%;
+    max-width: 600px;
+}
+
+section details summary{
+    background-color: #006934;
+    padding: 1%;
+    border-bottom: 2px solid #33830f;
+    font-weight: 600;
+}
+
+section details a{
+    color: black;
+    background-color: white;
+    font-size: 20px;
+}
+
 section, footer{
     padding: 54px 0;
     color: white;
