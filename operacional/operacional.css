@@ -136,7 +136,5 @@ nav ul a:not(.btn)::after{
 }
 
 nav ul a:hover::after{
-    width: 100%;
-
-    
+    width: 100%;   
 }
