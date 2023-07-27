@@ -16,6 +16,7 @@
 
 body{
     background-color: black;
+    display: flex;
 }
 
 section .list{
@@ -138,3 +139,15 @@ nav ul a:not(.btn)::after{
 nav ul a:hover::after{
     width: 100%;   
 }
+
+@media (orientation: landscape) {
+    body {
+     flex-direction: row;
+    }
+ }
+ 
+ @media (orientation: portrait) {
+    body {
+     flex-direction: column;
+    }
+ }
